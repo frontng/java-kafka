@@ -21,7 +21,7 @@ public class Producer {
     public static void main(String[] args) throws InterruptedException {
         Properties p = new Properties();
         //kafka地址，多个地址用逗号分割
-        p.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.4.111:9092");
+        p.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
         p.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         p.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         KafkaProducer<String, String> kafkaProducer = new KafkaProducer<String, String>(p);

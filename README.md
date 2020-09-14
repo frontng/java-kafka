@@ -17,12 +17,12 @@ cd java-kafka
 mvn install
 ````
 
-### 3.启动订阅程序
+### 3.启动订阅程序(start_consumer)
 ````
 mvn exec:java -Dexec.mainClass="com.frontng.demo.kafka.Consumer"
 ````
 
-### 4.启动发布程序
+### 4.启动发布程序(start_producer)
 ````
 mvn exec:java -Dexec.mainClass="com.frontng.demo.kafka.Producer"
 ````

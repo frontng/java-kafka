@@ -15,7 +15,7 @@ import org.apache.kafka.common.serialization.StringDeserializer;
 public class Consumer {
     public static void main(String[] args) {
         Properties p = new Properties();
-        p.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.4.111:9092");
+        p.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
         p.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         p.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         p.put(ConsumerConfig.GROUP_ID_CONFIG, Producer.TOPIC);
