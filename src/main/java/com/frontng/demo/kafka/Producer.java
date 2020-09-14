@@ -31,7 +31,7 @@ public class Producer {
                 String msg = "Hello," + new Random().nextInt(100);
                 ProducerRecord<String, String> record = new ProducerRecord<String, String>(TOPIC, msg);
                 kafkaProducer.send(record);
-                System.out.println("消息发送成功:" + msg);
+                System.out.println("msg sent:" + msg);
                 Thread.sleep(500);
             }
         } finally {
